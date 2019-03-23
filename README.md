@@ -12,7 +12,7 @@ The people who worked on this project and their contributions are:
 - [Taika](https://github.com/taikaa/)
 
 ## Step 1: Restaurant Establishments
-We started by working off of the [Establishments dataset](https://docs.google.com/spreadsheets/d/1W1EAY48Mm0h7zrBHhMnKbPozyxzG-ZdhGVla8nHwhrI/edit#gid=213667838) provided by the A2 Data Dive.
+We started by working off of the [Establishments dataset](https://github.com/mfldavidson/a2dd-detroit-rest-ratings/blob/master/Restaurant_Inspections_-_Establishments.csv) provided by the A2 Data Dive.
 
 ## Step 2: Yelp API
 We wanted to get the Yelp Rating (out of 5) for each establishment in the Establishments dataset. Josh used Python to make requests to the [Yelp API business search endpoint](https://www.yelp.com/developers/documentation/v3/business_search) with [Geoffrey Fairchild's yelpapi package.](https://github.com/gfairchild/yelpapi) Josh used the fields Name, Address, and Zip Code to find the business and return a dictionary with data about the business, including the rating. Josh then produced a [CSV file](https://github.com/mfldavidson/a2dd-detroit-rest-ratings/blob/master/yelp_ratings.csv) with the establishment code from the Establishment dataset and the rating.
